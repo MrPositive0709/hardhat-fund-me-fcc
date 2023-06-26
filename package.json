@@ -1,0 +1,28 @@
+{
+  "name": "hardhat-fund-me-fcc",
+  "author" : "MrPositive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "ethers": "5.7.2",
+    "hardhat": "2.9.3",
+    "hardhat-deploy": "^0.11.31",
+    "solhint": "^3.4.1"
+  },
+  "dependencies": {
+    "web3": "^4.0.1"
+  },
+  "scripts": {
+    "test" : "yarn hardhat test",
+    "test:staging": "yarn hardhat test --network sepolia" ,
+    "lint" : "yarn solhint 'contracts/*.sol'",
+    "lint:fix" : "yarn hardhat 'contracts/*.sol'",
+    "format" : "yarn prettier --write",
+    "coverage" : "yarn hardhat coverage"
+  }
+}
